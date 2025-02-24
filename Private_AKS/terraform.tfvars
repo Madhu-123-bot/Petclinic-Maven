@@ -1,0 +1,12 @@
+resource_group_name = "trialmg2345"
+environment         = "dev"
+location            = "WestEurope"
+default_node_size   = "Standard_D2s_v3"  # Fixed to avoid zone restriction
+max_node_count      = 2
+min_node_count      = 1
+ssh_public_key      = "~/.ssh/aks-prod-sshkeys-terraform/aksprodsshkey.pub"
+ssh_private_key     = "~/.ssh/aks-prod-sshkeys-terraform/aksprodsshkey"
+acr_name            = "sr1dhar4597mm"  # Updated to be unique
+acr_sku             = "Basic"
+bastion_vm_size     = "Standard_D2s_v3"
+tenant_id           = "612df0aa-17b2-4cfd-b60b-bbf1ddc3cb86"
